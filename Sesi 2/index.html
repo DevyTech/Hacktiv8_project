@@ -1,0 +1,303 @@
+<html>
+    <head>
+        <title>Sesi 2-Goals Akhir</title>
+        <style>
+            body{
+                background-color: cyan;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .nav{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .logo{
+                padding: 1em;
+            }
+            .menu{
+                display: flex;
+                flex-direction: row;
+            }
+            .menu .menu-item{
+                list-style-type: none;
+                margin-right: 3em;
+            }
+            .menu .menu-item a{
+                text-decoration: none;
+                color: black;
+                font-size: large;
+            }
+            .profile-section{
+                margin-top: 2em;
+                margin-bottom: 2em;
+                width: 100%;
+                height: 300px;
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+            }
+            .left-profile{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+            }
+            .left-profile .profile-image{
+                padding-left: 2em;
+            }
+            .left-profile .profile-intro{
+                padding-left: 2em;
+            }
+            .left-profile .nama{
+                font-size: 30px;
+                font-weight: bold;
+                color: black;
+                margin-bottom: 1em;
+            }
+            .left-profile .jabatan{
+                font-size: 24px;
+                font-weight: 500;
+                color: black;
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+            .left-profile .btn-kontak{
+                background-color: #0026F8;
+                color: white;
+                padding: 0.5em;
+                border: 1px solid white;
+                border-radius: 5px;
+                font-size: medium;
+                font-weight: bold;
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+            .left-profile .btn-resume{
+                background-color: white;
+                color: #28A745;
+                padding: 0.5em;
+                border: 1px solid #28A745;
+                border-radius: 5px;
+                font-size: medium;
+                font-weight: bold;
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+            .left-profile .btn-kontak:hover{
+                background-color: white;
+                color: #0026F8;
+                border: 1px solid #0026F8;
+                cursor: pointer;
+            }
+            .left-profile .btn-resume:hover{
+                background-color: #28A745;
+                color: white;
+                border: 1px solid #28A745;
+                cursor: pointer;
+            }
+            
+            .center-profile{
+                width: 20%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .center-profile .profile-detail{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 1em;
+                margin-left: 5em;
+            }
+
+            .right-profile{
+                width: 30%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .right-profile .profile-sub-detail{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 1em;
+            }
+
+            .form-section{
+                margin-top: 2em;
+                margin-bottom: 2em;
+                width: 100%;
+                height: 65%;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+            }
+            .form-section label{
+                font-weight: bold;
+            }
+            .form-section input{
+                width: 100%;
+                height: 2.5em;
+            }
+            .form-section .btn-submit{
+                background-color: #28A745;
+                color: white;
+                border: 1px solid white;
+                width: 100%;
+                margin-top: 1em;
+                padding: 1em;
+            }
+            .form-section .btn-submit:hover{
+                background-color: white;
+                color: #28A745;
+                border: 1px solid #28A745;
+                width: 100%;
+                margin-top: 1em;
+                padding: 1em;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Navigation Bar-->
+        <nav class="nav">
+            <!--Logo-->
+            <div class="logo">
+                Logo
+            </div>
+            <!--Menu-->
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#">HOME</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">PRODUCT</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">GALERRY</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">BLOG</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">INVENTORY</a>
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <hr>
+        </header>
+        <main>
+            <!--Profile-->
+            <section class="profile-section">
+                <div class="left-profile">
+                    <div class="profile-image">
+                        <img src="https://via.placeholder.com/200" alt="profile">
+                    </div>
+                    <div class="profile-intro">
+                        <div class="nama">
+                            Devaldy Imanuel Bawotong
+                        </div>
+                        <div class="jabatan">
+                            Frontend Designer
+                        </div>
+                        <div>
+                            <button class="btn-kontak">Kontak</button>
+                            <button class="btn-resume">Resume</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="center-profile">
+                    <div class="profile-detail">
+                        <div>Availability</div>
+                    </div>
+                    <div class="profile-detail">
+                        <div>Usia</div>
+                    </div>
+                    <div class="profile-detail">
+                        <div>Lokasi</div>
+                    </div>
+                    <div class="profile-detail">
+                        <div>Pengalaman</div>
+                    </div>
+                    <div class="profile-detail">
+                        <div>Email</div>
+                    </div>
+                </div>
+                <div class="right-profile">
+                    <div class="profile-sub-detail">
+                        <div>: Full Time</div>
+                    </div>
+                    <div class="profile-sub-detail">
+                        <div>: 20</div>
+                    </div>
+                    <div class="profile-sub-detail">
+                        <div>: Manado</div>
+                    </div>
+                    <div class="profile-sub-detail">
+                        <div>: 2</div>
+                    </div>
+                    <div class="profile-sub-detail">
+                        <div>: bawotongdevaldy@gmail.com</div>
+                    </div>
+                </div>
+            </section>
+            <!-- FORM -->
+            <section class="form-section">
+                <form method="post" action="#">
+                    <div class="label">
+                        <label>Nama</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <div class="label">
+                        <label>Role</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <div class="label">
+                        <label>Availability</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <div class="label">
+                        <label>Age</label>
+                    </div>
+                    <div class="input">
+                        <input type="number" autocomplete="off">
+                    </div>
+                    <div class="label">
+                        <label>Lokasi</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <div class="label">
+                        <label>Years Experience</label>
+                    </div>
+                    <div class="input">
+                        <input type="number" autocomplete="off">
+                    </div>
+                    <div class="label">
+                        <label>Email</label>
+                    </div>
+                    <div class="input">
+                        <input type="email" autocomplete="off">
+                    </div>
+                    <div>
+                        <button class="btn-submit" type="submit">SUBMIT</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+    <footer></footer>
+</html>
