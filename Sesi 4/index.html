@@ -3,64 +3,171 @@
     <head>
         <title>Sesi 4</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css"/>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #e3e1e1;
+            }
+            header{
+                text-align: center;
+            }
+            .container{
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                /* padding-left: 5em;
+                padding-right: 5em;
+                border: 1px solid red; */
+            }
+            /* Bagian Konten Sebelah Kiri */
+            .container .left{
+                width: 60%;
+                height: 100%;
+                margin-right: 2em;
+            }
+            /* Navigasi */
+            .container .left .nav{
+                padding-top: 5px;
+                padding-bottom: 5px;
+                background-color: #ff4000;
+            }
+            .container .left .nav .menu{
+                display: flex;
+                flex-direction: row;
+                
+            }
+            .container .left .nav .menu li{
+                list-style-type: none;
+            }
+            .container .left .nav .menu li a{
+                text-decoration: none;
+                color: white;
+            }
+            /* Bagian Card Image */
+            .container .left .card{
+                height: auto;
+                margin-top: 2em;
+                background-color: white;
+                border-radius: 5px;
+                padding-top: 1px;
+                padding-bottom: 1px;
+            }
+            .container .left .card .card-header h5{
+                text-align: right;
+                margin-right: 1em;
+            }
+            .container .left .card .card-body img{
+                width: 100%;
+                height: 100%;
+            }
+            .container .left .card .card-body h4 a{
+                margin-left: 1em;
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+            .container .left .card .card-body .card-title{
+                margin-left: 1em;
+            }
+            .container .left .card .card-body .card-text{
+                margin-left: 1em;
+            }
+
+            /* Bagian Card Tutorial */
+            .container .right{
+                width: 40%;
+                height: 100%;
+            }
+            .container .right .tutorial{
+                background-color: white;
+                padding: 5px;
+                border-radius: 5px;
+            }
+            .container .right .tutorial h1{
+                color: blue;
+            }
+            .container .right .workshop{
+                background-color: white;
+                padding: 5px;
+                border-radius: 5px;
+                margin-top: 1em;
+            }
+            .container .right .workshop h1{
+                color: blue;
+            }
+        </style>
     </head>
-    <header class="text-center">
+    <header>
         <h1>Workshop PWD8 Blog</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque magnam fugiat, autem molestiae nostrum dolor voluptatum, delectus, at debitis corporis expedita eos molestias. Aspernatur non, perspiciatis porro repellendus ipsum aliquam.</p>
     </header>
     <body>
-        <main class="container">
-            <div class="row">
-                <div class="col">
-                    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #ff4000;">
-                        <div class="container-fluid">
-                          <!-- <a class="navbar-brand" href="#">Navbar</a>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button> -->
-                          <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                              <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link active" href="#">TUTORIAL</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link active" href="#">KOMENTAR</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </nav>
-                </div>
-                <div class="col">
+        <main>
+            <section class="container">
+                <div class="left">
+                    <nav class="nav">
+                        <ul class="menu">
+                            <li><a href="">HOME</a></li>
+                            <li style="margin-left: 3em;"><a href="">TUTORIAL</a></li>
+                            <li style="margin-left: 3em;"><a href="">KOMENTAR</a></li>
+                        </ul>
+                    </nav>
                     <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
+                        <div class="card-header">
+                            <h5>Something Text Here</h5>
                         </div>
-                      </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
+                        <div class="card-body">
+                            <img src="https://images.pexels.com/photos/11082557/pexels-photo-11082557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                            <div class="card-title">
+                                <h1>Workshop Intro To Programming</h1>
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quidem rem, expedita dignissimos quo soluta nisi molestias sunt dolore officia ullam deserunt possimus voluptate voluptates, vel eius dolor tempore quibusdam.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quia reprehenderit ipsum minima quam voluptatibus cumque nam. Quasi corporis recusandae, at vero minima, laboriosam repellat veritatis voluptatem mollitia velit harum.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime eum rem est dolorum consequuntur fuga necessitatibus incidunt alias rerum. Numquam quis hic, quisquam nostrum quos rerum molestiae voluptas ab cum!
+                                </p>
+                            </div>
+                            <h4><a href="">Selengkapnya >></a></h4>
+                        </div>
+                    </div>
                     <div class="card">
-                        <img src="https://images.pexels.com/photos/11082557/pexels-photo-11082557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <div class="card-header">
+                            <h5>Something Text Here</h5>
                         </div>
-                      </div>
+                        <div class="card-body">
+                            <img src="https://images.pexels.com/photos/11082557/pexels-photo-11082557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                            <div class="card-title">
+                                <h1>Workshop Front End Web Devloper</h1>
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quidem rem, expedita dignissimos quo soluta nisi molestias sunt dolore officia ullam deserunt possimus voluptate voluptates, vel eius dolor tempore quibusdam.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quia reprehenderit ipsum minima quam voluptatibus cumque nam. Quasi corporis recusandae, at vero minima, laboriosam repellat veritatis voluptatem mollitia velit harum.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime eum rem est dolorum consequuntur fuga necessitatibus incidunt alias rerum. Numquam quis hic, quisquam nostrum quos rerum molestiae voluptas ab cum!
+                                </p>
+                            </div>
+                            <h4><a href="">Selengkapnya >></a></h4>
+                        </div>
+                    </div>
                 </div>
-            </div>
+
+                <div class="right">
+                    <div class="tutorial">
+                        <h1>Tutorial</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, natus totam. Temporibus molestiae et natus suscipit at accusantium pariatur nemo, sunt earum laboriosam possimus, aliquid eum quam, vel consequatur facere.
+                        </p>
+                    </div>
+                    <div class="workshop">
+                        <h1>Workshop & Data</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, natus totam. Temporibus molestiae et natus suscipit at accusantium pariatur nemo, sunt earum laboriosam possimus, aliquid eum quam, vel consequatur facere.
+                        </p>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
-    <script src="../bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
 </html>
